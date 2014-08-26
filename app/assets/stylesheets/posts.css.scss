@@ -1,0 +1,48 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  border-top: 4px solid #F9BA84;
+}
+
+header {
+  margin: 120px 0 120px 0;
+}
+
+.logo {
+  height: 100px;
+  padding: 0px;
+}
+
+.jg_logo {
+  height: 35px;
+  margin-top: 30px;
+  margin-left: -6px;
+  padding: 0px;
+}
+
+.blog_date {
+  font-size: 15px;
+  color: #999;
+}
+
+.blog_content {
+  margin-bottom: 50px;
+  padding-left: 0px;
+}
+
+h1.blog_title {
+  margin-top: 0px;
+  font-size: 17px;
+  font-weight: bolder;
+  & a:hover {
+    color: #F9BA84;
+    text-decoration: none;
+    background-color: white;
+  }
+}
+
+.blog_body {
+  font-size: 15px;
+}
