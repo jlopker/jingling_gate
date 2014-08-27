@@ -1,6 +1,15 @@
 <div class="container">
   <%= render "header" %>
 
+  <div class="row">
+    <div class="user_name col-md-2 col-md-offset-1">
+      <%= current_user.first_name + " " %><%= current_user.last_name %>
+    </div>
+    <div class="new_post col-md-2">
+      <%= link_to 'Create new post', new_post_path %>
+    </div>
+  </div>
+
   <% @posts.each do |post| %>
     <div class="blog_container row">
       <div class="blog_date col-md-2 col-md-offset-1">
@@ -11,14 +20,12 @@
           <a href="/posts/<%= post.id %>"><%= post.title %></a>
         </h1>
         <p class="blog_body">
-          <%= post.body %>
+          <%= post.body %><br />
         </p>
+        <%= link_to 'Edit', edit_post_path(post)%> |
+        <%= link_to 'Back', posts_path %>
       </div>
     </div>
-        <!--<td><#%= link_to 'Show', post %></td>
-        <td><#%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><#%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   <% end %>
 </div>
 
-<!--<#%= link_to 'New Post', new_post_path %>-->

@@ -6,10 +6,14 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_url, notice: "Welcome #{@user.first_name}!"
+      redirect_to user_url(@user.id), notice: "Welcome #{@user.first_name}!"
     else
       render "new"
     end
+  end
+
+  def show
+    @posts = current_user.posts.all
   end
 
   private

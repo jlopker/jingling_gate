@@ -10,6 +10,9 @@ header {
   margin: 80px 0 110px 0;
 }
 
+p {
+  font-size: 15px;
+}
 .user_nav {
   text-align: right;
   margin: 10px;
@@ -30,6 +33,7 @@ header {
 .blog_date {
   font-size: 15px;
   color: #999;
+  padding: 0px;
 }
 
 .blog_content {
@@ -60,4 +64,20 @@ h2.blog_title {
 
 .show_blog_body {
   font-size: 15px;
+  padding: 0px;
+}
+
+
+// USER SHOW PAGE STYLING
+.user_name {
+  padding: 0px;
+}
+
+.new_post {
+  padding: 0px;
+  & a:hover {
+    color: #F9BA84;
+    text-decoration: none;
+    background-color: white;
+  }
 }
