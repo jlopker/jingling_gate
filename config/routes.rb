@@ -1,6 +1,8 @@
 JinglingBlog::Application.routes.draw do
   root "posts#index"
+  get "/signup", to: "users#new", as: "sign_up"
   resources :posts
+  resources :users, only:[:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
