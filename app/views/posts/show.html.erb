@@ -11,9 +11,11 @@
       <p>USER IMG</p>
       <%= @post.created_at.to_date.to_formatted_s(:long) %>
     </div>
-    <%= simple_format @post.body, class: "show_blog_body col-md-offset-3" %>
+    <div class="col-md-offset-3">
+      <%= simple_format @post.body, class: "show_blog_body" %>
 
-    <%= link_to 'Edit', edit_post_path(@post), class:"col-md-offset-3" %> |
-    <%= link_to 'Back', posts_path %>
+      <%= link_to 'Edit', edit_post_path(@post)%> |
+      <%= link_to 'Back', posts_path %>
+    </div>
   </div>
 </div>
