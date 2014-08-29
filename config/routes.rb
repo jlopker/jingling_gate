@@ -5,7 +5,7 @@ JinglingBlog::Application.routes.draw do
   get "/log_out", to: "sessions#destroy", as: "log_out"
 
   resources :posts
-  resources :users, only:[:new, :create, :show]
+  resources :users, only:[:new, :create, :edit, :show]
   resources :sessions, only:[:new, :create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.

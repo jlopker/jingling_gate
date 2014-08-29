@@ -8,6 +8,7 @@ gem 'sqlite3'
 
 gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 gem 'carrierwave'
+gem 'cloudinary'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
