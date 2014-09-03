@@ -1,6 +1,6 @@
 Cloudinary.config do |config|
-  config.cloud_name = ENV["MY_CLOUD_NAME"]
-  config.api_key = ENV["MY_API_KEY"]
-  config.api_secret = ENV["MY_SECRET_KEY"]
+  config.cloud_name = 'jingling-blog' 
+  config.api_key = '682674747649467'
+  config.api_secret = 'iF5NHRL8r9KAAd-CeOlWeju54cA'
   config.cdn_subdomain = true
 end

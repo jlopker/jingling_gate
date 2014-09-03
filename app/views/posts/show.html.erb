@@ -8,9 +8,9 @@
   </div>
   <div class="row">
     <div class="blog_date col-md-2 col-md-offset-1">
-      <p>USER IMG</p>
-      by <%= @user.first_name + " " %><%= @user.last_name %><br />
-      <%= @post.created_at.to_date.to_formatted_s(:long) %>
+      <%= image_tag @user.avatar_url(:profile_face) %><br/>
+      <p class="user_info"><em>by</em> <%= @user.first_name + " " %><%= @user.last_name %></p>
+      <p class="user_info"><%= @post.created_at.to_date.to_formatted_s(:long) %></p>
     </div>
     <div class="show_blog_body col-md-8">
       <%= simple_format @post.body, class: "show_blog_body" %>

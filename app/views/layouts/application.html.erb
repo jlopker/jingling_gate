@@ -9,11 +9,11 @@
 <body>
   <div class="user_nav">
     <% if current_user %>
-      Logged in as <a href="/users/<%=current_user.id%>"><%= current_user.first_name %></a>
-      <%= link_to "Log out", log_out_path %>
+      Logged in as <a href="/users/<%=current_user.id%>", class="logged_in"><%= current_user.first_name %></a>
+      <%= link_to "Log out", log_out_path, class: "log_out" %>
     <% else %>
-      <%= link_to "Sign up", sign_up_path %>
-      <%= link_to "Log in", log_in_path %>
+      <%= link_to "Sign up", sign_up_path, class:"sign_up" %>
+      <%= link_to "Log in", log_in_path, class:"log_in" %>
     <% end %>
   </div>
   <% flash.each do |name, msg| %>

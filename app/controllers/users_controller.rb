@@ -4,8 +4,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.create(user_params)
     if @user.save
+      session[:user_id] = @user.id
       redirect_to user_url(@user.id), notice: "Welcome #{@user.first_name}!"
     else
       render "new"
@@ -13,7 +14,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @posts = current_user.posts.all
+    if current_user.posts == nil
+      puts "You have no blogs posted."
+    else
+      @posts = current_user.posts.all
+    end
   end
 
   private
