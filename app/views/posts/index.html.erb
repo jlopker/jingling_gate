@@ -11,7 +11,7 @@
           <a href="/posts/<%= post.id %>"><%= post.title %></a>
         </h1>
         <p class="blog_body">
-          <%= post.body %>
+          <%= truncate_html(post.body, length: 400) %>
         </p>
       </div>
     </div>

@@ -11,6 +11,10 @@ gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 gem 'carrierwave'
 gem 'cloudinary'
 
+gem 'nokogiri', '~> 1.6.3.1' 
+gem 'htmlentities'
+gem 'truncate_html'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -47,4 +51,5 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
+gem 'byebug'
