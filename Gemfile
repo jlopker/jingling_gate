@@ -10,6 +10,8 @@ gem 'pg'
 gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'ckeditor'
+gem 'mini_magick'
 
 gem 'nokogiri', '~> 1.6.3.1' 
 gem 'htmlentities'

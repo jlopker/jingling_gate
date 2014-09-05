@@ -1,4 +1,5 @@
 JinglingBlog::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root "posts#index"
   get "/signup", to: "users#new", as: "sign_up"
   get "/log_in", to: "sessions#new", as: "log_in"
