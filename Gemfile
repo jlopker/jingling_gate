@@ -16,6 +16,7 @@ gem 'mini_magick'
 gem 'nokogiri', '~> 1.6.3.1' 
 gem 'htmlentities'
 gem 'truncate_html'
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
