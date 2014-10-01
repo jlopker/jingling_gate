@@ -1,0 +1,119 @@
+.header {
+	position: fixed;
+	width: 100%;
+	background: #ffffff;
+	z-index: 10;
+	height: 70px;
+	opacity: 0.9;
+}
+.header .navbar-brand {
+	font-weight: 900;
+	padding: 0px;
+}
+.header .navbar {
+	margin: 0;
+	border: none;
+}
+.navbar-nav > li > a {
+	padding-top: 25px;
+}
+.topSpace {
+	margin-top: 100px;
+}
+.page-header {
+	border-bottom: 5px dotted #5C4856;
+}
+.page-section {
+	padding: 70px 0;
+}
+.page-section#home {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.page-section#home:after {
+	content: "";
+	background-image: url(school_supplies.jpg);
+	background-size: cover;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+.page-section#projects {
+	background-color: #F2E9DA;
+}
+.page-section#services {
+	background-color: #F8BA84;
+}
+.page-section#team {
+	background-color: #F2E9DA;
+}
+// .page-section#contact {
+// 	background-color: #5C4856;
+// }
+.page-section#contact {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.page-section#contact:after {
+	content: "";
+	background-image: url(typing.png);
+	background-size: cover;
+	opacity: 0.4;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+.page-section#europe {
+	background: url(images/europe.jpg) top center no-repeat;
+}
+.page-section#north-america {
+	background: url(images/north-america.jpg) top center no-repeat;
+}
+.page-section#south-america {
+	background: url(images/south-america.jpg) top center no-repeat;
+}
+ 
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+.prev, .next {
+	top: 30%;
+	position: absolute;
+}
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}

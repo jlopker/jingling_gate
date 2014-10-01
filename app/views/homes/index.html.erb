@@ -1,0 +1,222 @@
+<div class="header">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header">
+              <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand scroll-top"><%= image_tag "key.svg" %></a>
+            </div>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#" class="scroll-link" data-id="projects">PROJECTS</a></li>
+                  <li><a href="#" class="scroll-link" data-id="services">SERVICES</a></li>
+                  <li><a href="#" class="scroll-link" data-id="team">TEAM</a></li>
+                  <li><a href="#" class="scroll-link" data-id="contact">CONTACT</a></li>
+                  <li><a href="/blog">BLOG</a></li>
+                </ul>
+            </div>
+            <!--/#main-nav.navbar-collapse-->
+        </nav>
+        <!--/.navbar-->
+    </div>
+    <!--/.container-->
+</div>
+<!--/.header-->
+ 
+<div id="home" class="page-section">
+  <div class="container text-center">
+    <div class="topSpace"><%= image_tag "horizontal.svg" %></div>
+    <h1 class="topSpace">Jingling Gate is a web engineering team focused on user-friendly web development.</h1>
+    <a href="#" class="scroll-link topSpace btn btn-primary btn-lg" data-id="projects">Learn More</a>
+  </div>
+</div>
+
+<!-- Projects
+================================================== -->
+<div class="page-section" id="projects">
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>Our latest work</h2>
+    </div>
+
+  
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
+          <div class="col-sm-5">
+            <h1>Prophecy Sciences</h1>
+            <p>
+              Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
+            </p>
+            <p>
+              Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "macbook_nouv.png", class: "col-sm-6", alt: "Nouvola" %>
+          <div class="col-sm-5">
+            <h1>Nouvola</h1>
+            <p>
+              Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting your website all at once.
+            </p>
+            <p>
+              We were responsible for front end implementation so that users would be able to upload the necessary information to setup their tests. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="fa fa-angle-left fa-5x prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="fa fa-angle-right fa-5x next"></span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div id="services" class="page-section">
+    <div class="container">
+      <div class="page-header text-center">
+        <h2>Services</h2>
+      </div>
+      <div class="col-sm-6 col-md-3 service-item design">
+        <h3>Front End</h3>
+        <ul>
+          <li class="top">HTML/CSS
+            <ul>
+              <li><em>Bootstrap</em></li>
+              <li><em>Less/SCSS</em></li>
+              <li><em>HAML/Jade</em></li>
+            </ul>
+          </li>
+          <li class="top">Javascript
+            <ul>
+              <li><em>JQuery</em></li>
+              <li><em>Angular</em></li>
+              <li><em>Backbone</em></li>
+              <li><em>Coffeescript</em></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3 service-item design">
+        <h3>Full Stack</h3>
+        <ul>
+          <li class="top">Ruby on Rails
+            <ul>
+              <li><em>Product Design</em></li>
+              <li><em>Testing (Cucumber/RSpec)</em></li>
+              <li><em>Deployment</em></li>
+            </ul>
+          </li>
+          <li class="top">Python
+            <ul>
+              <li><em>Flask</em></li>
+              <li><em>Alembic</em></li>
+            </ul>
+          </li>
+          <li class="top">Node js
+            <ul>
+              <li><em>Express</em></li>
+            </ul>
+           </li> 
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3 service-item design">
+        <h3>Deployment</h3>
+        <ul>
+          <li class="top">Heroku</li>
+          <li class="top">Postgres/MySQL DB</li>
+          <li class="top">Analytics
+            <ul>
+              <li><em>Google</em></li>
+              <li><em>Mixpanel</em></li>
+              <li><em>CrazyEgg</em></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3 service-item design">
+        <h3>Growth/Maintenance</h3>
+        <ul>
+          <li class="top">Developer Training</li>
+          <li class="top">Splash/Marketing Pages</li>
+          <li class="top">User Testing</li>
+          <li class="top">Interpretation of analytics data</li>
+        </ul>
+      </div>
+    </div>
+</div>
+ 
+<div id="team" class="page-section">
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>Team</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <%= image_tag "charlene-avatar.png", class: "display-pic", alt: "Charlene Estiva" %>
+        <h3>Charlene Estiva</h3>
+        <h5><i>Developer Intern</i></h5>
+        <p>Born and raised San Franciscan and General Assembly WDI alumna. Front-end developer interested in client-side technologies and UI. Self proclaimed golfer and bay area sports fan.</p>
+        <!-- <a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a> -->
+        <!-- <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a> -->
+        <a class="icon" href="https://www.linkedin.com/in/charleneestiva" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "emma-avatar.jpg", class: "display-pic", alt: "Emma Lindsay" %>
+        <h3>Emma Lindsay</h3>
+        <h5><i>Developer</i></h5>
+        <p>2007 MIT CS alumna who has been coding for over a decade. Took a year off to study massage therapy and is addicted to lattes.</p>
+        <a class="icon" href="https://www.linkedin.com/in/ejlindsay" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "juliana-avatar.jpg", class: "display-pic", alt: "Juliana Lopker" %>
+        <h3>Juliana Lopker</h3>
+        <h5><i>Developer</i></h5>
+        <p>San Francisco n00b and Brown University alumna. Full stack developer specializing in the front-end and user experience. Lover of good design, dogs, and ice cream.</p>
+        <a class="icon" href="https://www.linkedin.com/pub/juliana-lopker/36/871/942" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div id="contact" class="page-section">
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>Contact</h2>
+    </div>
+    <p>Email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></p> 
+    <div class='contact-form'>
+      <form name="sentMessage" id="contactForm"  novalidate>
+        <div class='name'>
+          <input class='form-control first' placeholder='First Name' type='text' id="first_name" autofocus required data-validation-required-message="Please enter your first name">
+          <input class='form-control last' placeholder='Last Name' type='text' id="last_name" required data-validation-required-message="Please enter your last name">
+        </div>
+        <div class='contact'>
+          <input class='form-control email' placeholder='E-mail Address' type='text' id="email" required data-validation-required-message="Please enter your email">
+        </div>
+        <div class='message'>
+          <textarea class="form-control" placeholder='Your message' id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+        </div>
+        <div id="success"> </div> <!-- For success/fail messages -->
+        <footer class="submit-button">
+          <button type="submit" class="btn btn-primary">Send your message</button>
+        </footer>
+      </form>
+            
+    </div>
+  </div>
+</div>
