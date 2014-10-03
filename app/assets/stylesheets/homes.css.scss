@@ -36,7 +36,7 @@
 	background-color: #fff;
 }
 .topSpace {
-	margin-top: 100px;
+	padding-top: 100px;
 }
 .page-header {
 	border-bottom: none;
@@ -54,7 +54,7 @@
 }
 .page-section#home:after {
 	content: "";
-	background-image: url(Blur-5sm.jpg);
+	background-image: image_path("Blur-5sm.jpg");
 	background-size: cover;
 	// opacity: 0.2;
 	top: 0;
@@ -136,7 +136,7 @@
 }
 .page-section#contact:after {
 	content: "";
-	background-image: url(workingtogether.jpg);
+	background-image: image_path("workingtogether.jpg");
 	background-size: cover;
 	opacity: 0.4;
 	top: 0;
