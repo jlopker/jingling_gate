@@ -1,7 +1,7 @@
   <%= render "header" %>
 
   <% @posts.each do |post| %>
-  <div class="blog_container row">
+  <div class="blog_container row topSpace">
     <div class="blog_date col-md-2 col-md-offset-1">
       <%= post.created_at.to_date.to_formatted_s(:long) %>
     </div>
