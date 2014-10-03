@@ -94,13 +94,36 @@
 }
 
 .page-section#projects {
-	background-color: #F2E9DA;
+	background-color: #FCF8F0;
+	.fa {
+		color: #E0B76E;
+		text-shadow: none;
+	}
 }
 .page-section#services {
-	background-color: #F8BA84;
+	background-color: #E0B76E;
+	color: #fff;
+	.category > .top {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 10px 0px;
+		li {
+			font-weight: normal;
+			text-transform: none;
+		}
+	}
 }
 .page-section#team {
-	background-color: #F2E9DA;
+	background-color: #FCF8F0;
+	.fa {
+		color: #88b7b3;
+	}
+	.fa:hover {
+		color: #68a49f;
+	}
+	.display-pic {
+		border: 4px solid #E0B76E;
+	}
 }
 // .page-section#contact {
 // 	background-color: #5C4856;
@@ -113,7 +136,7 @@
 }
 .page-section#contact:after {
 	content: "";
-	background-image: url(typing.png);
+	background-image: url(workingtogether.jpg);
 	background-size: cover;
 	opacity: 0.4;
 	top: 0;
@@ -123,14 +146,15 @@
 	position: absolute;
 	z-index: -1; 
 }
-.page-section#europe {
-	background: url(images/europe.jpg) top center no-repeat;
-}
-.page-section#north-america {
-	background: url(images/north-america.jpg) top center no-repeat;
-}
-.page-section#south-america {
-	background: url(images/south-america.jpg) top center no-repeat;
+.page-section#footer {
+	background-color: #5C4856;
+	color: #fff;
+	.icon {
+		color: #fff;
+	}
+	.icon:hover {
+		color: #88b7b3;
+	}
 }
  
 @media (min-width: 768px) {

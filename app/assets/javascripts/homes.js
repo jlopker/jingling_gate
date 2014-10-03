@@ -56,7 +56,7 @@ function scrollAnchor() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 70
         }, 650);
         return false;
       }
@@ -72,7 +72,7 @@ function onePageScroll() {
       currentClass: 'current',
       changeHash: false,
       scrollSpeed: 650,
-      scrollOffset: 30,
+      scrollOffset: 70,
       scrollThreshold: 0.5,
       filter: ':not(.login, .signup)',
       easing: 'swing',
