@@ -16,12 +16,31 @@
 }
 .navbar-nav > li > a {
 	padding-top: 25px;
+	padding-bottom: 25px;
+	color: black;
+}
+.navbar-nav > li > a:hover {
+	background-color: #fff;
+	color: #88b7b3;
+}
+.navbar-nav > li.current > a {
+	color: #88b7b3;
+}
+.navbar-toggle {
+	margin-top: 16px;
+}
+.navbar-toggle .icon-bar {
+	background: #88b7b3;
+}
+.navbar-collapse.in {
+	background-color: #fff;
 }
 .topSpace {
 	margin-top: 100px;
 }
 .page-header {
-	border-bottom: 5px dotted #5C4856;
+	border-bottom: none;
+	text-transform: uppercase;
 }
 .page-section {
 	padding: 70px 0;
@@ -31,12 +50,13 @@
 	height: 100%;
 	display: block;
 	position: relative;
+	color: #ffffff;
 }
 .page-section#home:after {
 	content: "";
-	background-image: url(school_supplies.jpg);
+	background-image: url(Blur-5sm.jpg);
 	background-size: cover;
-	opacity: 0.2;
+	// opacity: 0.2;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -44,6 +64,35 @@
 	position: absolute;
 	z-index: -1; 
 }
+#home {
+	.homecontent {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		max-width: 80%;
+		max-height: 25%;
+		margin: auto;
+		text-align: center;
+	}
+	.learnmore {
+		background: #88b7b3;
+		border-radius: 4px;
+		border: 0;
+		color: white;
+		padding: 1.3em 2em;
+		margin-top: 1em;
+		transition: all linear .2s;
+	}
+	.learnmore:hover {
+	  background: #68a49f;
+	}
+	.img-responsive {
+		display: inline;
+	}
+}
+
 .page-section#projects {
 	background-color: #F2E9DA;
 }
@@ -116,4 +165,115 @@
 }
 .next {
 	right: 0;
+}
+
+.contact-button:focus {
+  outline: 0;
+}
+.contact-button.active {
+  background: none !important;
+  border-color: #cdcdcd !important;
+  color: #cdcdcd !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.contact-form {
+  width: 600px;
+  margin: 2em auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.contact-form .message,
+.contact-form .contact,
+.contact-form .name,
+.contact-form .footer,
+.contact-form header,
+.contact-form textarea {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  clear: both;
+  overflow: hidden;
+}
+.contact-form header {
+  height: 75px;
+  background: rgba(0, 0, 0, 0.05);
+  line-height: 75px;
+  padding-left: 20px;
+  border-radius: 5px 5px 0 0;
+}
+.contact-form header h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.4);
+}
+.contact-form .first,
+.contact-form .last {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+.contact-form .first {
+  border-radius: 4px 0 0 0;
+}
+.contact-form .last {
+  border-left: 0;
+  border-radius: 0 4px 0 0;
+}
+.contact-form .email {
+  height: 50px;
+  width: 100%;
+  line-height: 25px;
+  padding: 0 0 0 20px;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contact-form textarea {
+  height: 50px;
+  width: 100%;
+  line-height: 25px;
+  padding: 15px 20px 15px 20px;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  height: 200px;
+}
+.contact-form #success {
+  margin-top: 1em;
+}
+.contact-form footer {
+  text-align: center;
+  background: none;
+  padding: 1em 0;
+}
+.contact-form footer button {
+  background: #88b7b3;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  padding: 1.3em 2em;
+  margin-top: 1em;
+  transition: all linear .2s;
+}
+.contact-form footer button:hover {
+  background: #68a49f;
+}
+.contact-form footer button:focus {
+  outline: none;
+}
+.contact-form .first:focus,
+.contact-form .last:focus,
+.contact-form .email:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: #f1f1f1;
+  color: rgba(51, 51, 51, 0.7);
 }

@@ -2,23 +2,25 @@
     <div class="container">
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
-              <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+              <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a href="#" class="navbar-brand scroll-top"><%= image_tag "key.svg" %></a>
+              <a href="#home" class="navbar-brand scroll"><%= image_tag "key.svg"%></a>
             </div>
             <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li><a href="#" class="scroll-link" data-id="projects">PROJECTS</a></li>
-                  <li><a href="#" class="scroll-link" data-id="services">SERVICES</a></li>
-                  <li><a href="#" class="scroll-link" data-id="team">TEAM</a></li>
-                  <li><a href="#" class="scroll-link" data-id="contact">CONTACT</a></li>
-                  <li><a href="/blog">BLOG</a></li>
-                </ul>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/blog">BLOG</a></li>
+              </ul>
+              <ul class="nav navbar-nav scrollnav">
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
             </div>
             <!--/#main-nav.navbar-collapse-->
         </nav>
@@ -29,10 +31,10 @@
 <!--/.header-->
  
 <div id="home" class="page-section">
-  <div class="container text-center">
-    <div class="topSpace"><%= image_tag "horizontal.svg" %></div>
-    <h1 class="topSpace">Jingling Gate is a web engineering team focused on user-friendly web development.</h1>
-    <a href="#" class="scroll-link topSpace btn btn-primary btn-lg" data-id="projects">Learn More</a>
+  <div class="container text-center homecontent">
+    <div><%= image_tag "horizontal_light.svg" , class: "img-responsive" %></div>
+    <h3>Jingling Gate is a web engineering team focused on<br> user-friendly web development.</h3>
+    <a href="#projects" class="scroll btn btn-primary learnmore">Learn More</a>
   </div>
 </div>
 
@@ -198,7 +200,7 @@
     <div class="page-header text-center">
       <h2>Contact</h2>
     </div>
-    <p>Email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></p> 
+    <p class="text-center">Use the form below or email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></p> 
     <div class='contact-form'>
       <form name="sentMessage" id="contactForm"  novalidate>
         <div class='name'>
@@ -219,4 +221,5 @@
             
     </div>
   </div>
+  <div class="overlay"></div>
 </div>
