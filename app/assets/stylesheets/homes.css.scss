@@ -54,7 +54,7 @@
 }
 .page-section#home:after {
 	content: "";
-	background-image: image_path("Blur-5sm.jpg");
+	background-image: asset-url('Blur-5sm.jpg');
 	background-size: cover;
 	// opacity: 0.2;
 	top: 0;
@@ -136,7 +136,7 @@
 }
 .page-section#contact:after {
 	content: "";
-	background-image: image_path("workingtogether.jpg");
+	background-image: asset-url('workingtogether.jpg');
 	background-size: cover;
 	opacity: 0.4;
 	top: 0;
