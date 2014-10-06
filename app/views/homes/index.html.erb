@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="container">
+  <div class="container">
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
               <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,21 +11,31 @@
               <a href="#home" class="navbar-brand scroll"><%= image_tag "key.svg"%></a>
             </div>
             <!--/.navbar-header-->
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+              <li><a href="/blog" target="_blank">BLOG</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#team">TEAM</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+    
             <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="/blog" target="_blank">BLOG</a></li>
-              </ul>
-              <ul class="nav navbar-nav scrollnav">
+              <ul class="nav navbar-nav scrollnav visible-xs">
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#team">TEAM</a></li>
                 <li><a href="#contact">CONTACT</a></li>
               </ul>
+              <ul class="nav navbar-nav navbar-right visible-xs">
+                <li><a href="/blog" target="_blank">BLOG</a></li>
+              </ul>
             </div>
             <!--/#main-nav.navbar-collapse-->
         </nav>
         <!--/.navbar-->
-    </div>
+      </div>
     <!--/.container-->
 </div>
 <!--/.header-->
