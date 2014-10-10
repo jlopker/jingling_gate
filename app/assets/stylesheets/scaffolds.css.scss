@@ -7,13 +7,11 @@ body {
   line-height: 24px;
   font-weight: 300 !important;
 }
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
-}
 a {
   color: #dfb66d;
+}
+a:hover {
+  color: #BF8D67;
 }
 h2 {
   color: #dfb66d;
@@ -29,18 +27,6 @@ h3 {
   font-weight: bold;
   letter-spacing: 2px;
 }
-// a {
-//   color: #E1B76F;
-//   &:visited {
-//     color: #666;
-//   }
-//   &:hover {
-//     color: #F9BA84;
-//     background-color: white;
-//     text-decoration: none;
-//   }
-// }
-
 div {
   &.field, &.actions {
     margin-bottom: 10px;
