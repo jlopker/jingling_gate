@@ -5,53 +5,11 @@
     <div class="bounce3"></div>
   </div>
 </div>
-
-<div class="header">
-  <div class="container">
-        <nav class="navbar" role="navigation">
-            <div class="navbar-header">
-              <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="#home" class="navbar-brand scroll"><%= image_tag "key.svg"%></a>
-            </div>
-            <!--/.navbar-header-->
-            <ul class="nav navbar-nav navbar-right hidden-xs">
-              <li><a href="/blog" target="_blank">BLOG</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
-              <li><a href="#projects">PROJECTS</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#team">TEAM</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-    
-            <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav scrollnav visible-xs">
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#team">TEAM</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right visible-xs">
-                <li><a href="/blog" target="_blank">BLOG</a></li>
-              </ul>
-            </div>
-            <!--/#main-nav.navbar-collapse-->
-        </nav>
-        <!--/.navbar-->
-      </div>
-    <!--/.container-->
-</div>
-<!--/.header-->
  
 <div id="home" class="page-section">
   <div class="container text-center homecontent">
-    <div><%= image_tag "horizontal_light.svg" , class: "img-responsive" %></div>
-    <h3>Jingling Gate is a web engineering team focused on<br> user-friendly web development.</h3>
+    <div><%= image_tag "key.svg" , class: "img-responsive" %></div>
+    <h1>Jingling Gate is a web engineering team focused on<br> user-friendly web development.</h1>
     <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
   </div>
 </div>
@@ -61,10 +19,10 @@
 <div class="page-section" id="projects">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Our latest work</h2>
+      <h1>Projects</h1>
+      <hr>
     </div>
 
-  
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
@@ -72,6 +30,7 @@
           <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
           <div class="col-sm-5">
             <h1>Prophecy Sciences</h1>
+            <h2>Python and js</h2>
             <p>
               Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
             </p>
@@ -84,6 +43,7 @@
           <%= image_tag "macbook_nouv.png", class: "col-sm-6", alt: "Nouvola" %>
           <div class="col-sm-5">
             <h1>Nouvola</h1>
+            <h2>Rails and js</h2>
             <p>
               Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting your website all at once.
             </p>
@@ -107,83 +67,33 @@
 </div>
 
 <div id="services" class="page-section">
-    <div class="container">
+    <div class="container text-center">
       <div class="page-header text-center">
-        <h2>What can we do?</h2>
+        <h1>Services</h1>
       </div>
-      <div class="col-sm-6 col-md-3 service-item design">
-        <h3>Front End</h3>
-        <ul class="list-unstyled category">
-          <li class="top">HTML/CSS
-            <ul class="list-unstyled">
-              <li><em>Bootstrap</em></li>
-              <li><em>Less/SCSS</em></li>
-              <li><em>HAML/Jade</em></li>
-            </ul>
-          </li>
-          <li class="top">Javascript
-            <ul class="list-unstyled">
-              <li><em>JQuery</em></li>
-              <li><em>Angular</em></li>
-              <li><em>Backbone</em></li>
-              <li><em>Coffeescript</em></li>
-            </ul>
-          </li>
-        </ul>
+      <div class="col-sm-4 service-item">
+        <h2>Listen to your needs</h2>
+        <hr>
+        <p>We listen to you, then form a plan to <br>help you create the website you want.</p>
       </div>
-      <div class="col-sm-6 col-md-3 service-item design">
-        <h3>Full Stack</h3>
-        <ul class="list-unstyled category">
-          <li class="top">Ruby on Rails
-            <ul class="list-unstyled">
-              <li><em>Product Design</em></li>
-              <li><em>Testing (Cucumber/RSpec)</em></li>
-              <li><em>Deployment</em></li>
-            </ul>
-          </li>
-          <li class="top">Python
-            <ul class="list-unstyled">
-              <li><em>Flask</em></li>
-              <li><em>Alembic</em></li>
-            </ul>
-          </li>
-          <li class="top">Node js
-            <ul class="list-unstyled">
-              <li><em>Express</em></li>
-            </ul>
-           </li> 
-        </ul>
+      <div class="col-sm-4 service-item">
+        <h2>Build for your users</h2>
+        <hr>
+        <p>Your customers are our primary focus; <br>we always build with them in mind.</p>
       </div>
-      <div class="col-sm-6 col-md-3 service-item design">
-        <h3>Deployment</h3>
-        <ul class="list-unstyled category">
-          <li class="top">Heroku</li>
-          <li class="top">Postgres/MySQL DB</li>
-          <li class="top">Analytics
-            <ul class="list-unstyled">
-              <li><em>Google</em></li>
-              <li><em>Mixpanel</em></li>
-              <li><em>CrazyEgg</em></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-md-3 service-item design">
-        <h3>Growth/Maintenance</h3>
-        <ul class="list-unstyled category">
-          <li class="top">Developer Training</li>
-          <li class="top">Splash/Marketing Pages</li>
-          <li class="top">User Testing</li>
-          <li class="top">Interpretation of analytics data</li>
-        </ul>
+      <div class="col-sm-4 service-item">
+        <h2>Create great websites</h2>
+        <hr>
+        <p>The websites we create are highly <br>interactice, with a focus on usability.</p>
       </div>
     </div>
 </div>
- 
+
 <div id="team" class="page-section">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Who are we?</h2>
+      <h1>Team</h1>
+      <hr>
     </div>
     <div class="row text-center">
       <div class="col-md-4">
@@ -212,13 +122,96 @@
     </div>
   </div>
 </div>
+
+<div id="quote" class="page-section">
+  <div class="container text-center">
+    <h1>"Working with Jingling Gate..."</h1>
+    <h3>-Tim Hart, CEO Prophecy Sciences</h3>
+  </div>  
+</div>
+
+<div id="proficiencies" class="page-section">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Our Proficiencies?</h1>
+        <hr>
+      </div>
+      <div class="col-xs-6 col-md-3 proficiency-item design">
+        <h2>Front End</h2>
+        <ul class="list-unstyled category">
+          <li class="top"><h3>HTML/CSS</h3>
+            <ul class="list-unstyled">
+              <li><em>Bootstrap</em></li>
+              <li><em>Less/SCSS</em></li>
+              <li><em>HAML/Jade</em></li>
+            </ul>
+          </li>
+          <li class="top"><h3>Javascript</h3>
+            <ul class="list-unstyled">
+              <li><em>JQuery</em></li>
+              <li><em>Angular</em></li>
+              <li><em>Backbone</em></li>
+              <li><em>Coffeescript</em></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3 proficiency-item design">
+        <h2>Full Stack</h2>
+        <ul class="list-unstyled category">
+          <li class="top"><h3>Ruby on Rails</h3>
+            <ul class="list-unstyled">
+              <li><em>Product Design</em></li>
+              <li><em>Testing (Cucumber/RSpec)</em></li>
+              <li><em>Deployment</em></li>
+            </ul>
+          </li>
+          <li class="top"><h3>Python</h3>
+            <ul class="list-unstyled">
+              <li><em>Flask</em></li>
+              <li><em>Alembic</em></li>
+            </ul>
+          </li>
+          <li class="top"><h3>Node js</h3>
+            <ul class="list-unstyled">
+              <li><em>Express</em></li>
+            </ul>
+           </li> 
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3 proficiency-item design">
+        <h2>Deployment</h2>
+        <ul class="list-unstyled category">
+          <li class="top"><h3>Heroku</h3></li>
+          <li class="top"><h3>Postgres/MySQL DB</h3></li>
+          <li class="top"><h3>Analytics</h3>
+            <ul class="list-unstyled">
+              <li><em>Google</em></li>
+              <li><em>Mixpanel</em></li>
+              <li><em>CrazyEgg</em></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3 proficiency-item design">
+        <h2>Growth/Maintenance</h2>
+        <ul class="list-unstyled category">
+          <li class="top"><h3>Developer Training</h3></li>
+          <li class="top"><h3>Splash/Marketing Pages</h3></li>
+          <li class="top"><h3>User Testing</h3></li>
+          <li class="top"><h3>Interpretation of analytics data</h3></li>
+        </ul>
+      </div>
+    </div>
+</div>
  
 <div id="contact" class="page-section">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Let's work together!</h2>
+      <h1>Let's work together!</h1>
     </div>
-    <p class="text-center">Use the form below or email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></p> 
+    <h2 class="text-center">Fill out this form to request a quote or say hello</h2>
+    <p class="form-subtext text-center"><i>Or email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></i></p> 
     <div class='contact-form'>
       <form name="sentMessage" id="contactForm"  novalidate>
         <div class='name'>
@@ -233,7 +226,7 @@
         </div>
         <div id="success"> </div> <!-- For success/fail messages -->
         <footer class="submit-button text-center">
-          <button type="submit" class="btn btn-primary btn-lg">Send your message</button>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
         </footer>
       </form>
             
@@ -242,12 +235,20 @@
   <div class="overlay"></div>
 </div>
 
-<div id="footer" class="footer page-section">
-  <div class="container text-center">
-    <div class="page-header">
-      <h2>San Francisco</h2>
+<div id="footer">
+  <div class="container hidden-xs">
+    <div class="col-sm-3">
+      <p><i>© 2014 Jingling Gate Productions</i></p>
     </div>
-    <h3><a class="icon" href="https://twitter.com/Jingling_Gate" target="_blank"><i class="fa fa-twitter"></i></a></h3>
-    <p><small>© 2014 Jingling Gate Productions</small></p>
+    <div class="col-sm-6 text-center location">Proudly built in <%= image_tag "key.svg" , class: "img-responsive" %> San Francisco, CA</div>
+    <div class="col-sm-3 text-right"><i>Site Design by <a href="http://juneletters.com" target="_blank">June Letters Studio</a></i></div>
+  </div>
+  <div class="container visible-xs">
+    <div class="col-xs-12 text-center location">Proudly built in <%= image_tag "key.svg" , class: "img-responsive" %> San Francisco, CA</div>
+    <div class="col-xs-6">
+      <p><i>© 2014 Jingling Gate Productions</i></p>
+    </div>
+    
+    <div class="col-xs-6 text-right"><i>Site Design by <a href="http://juneletters.com" target="_blank">June Letters Studio</a></i></div>
   </div>
 </div>

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Jingling Gate</title>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
   <%= favicon_link_tag 'favicon.png' %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -21,6 +21,48 @@
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, id: "flash#{name}", class: "container" %>
   <% end %> -->
+
+  <div class="header">
+    <div class="container">
+          <nav class="navbar" role="navigation">
+              <div class="navbar-header">
+                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="#home" class="navbar-brand scroll"><%= image_tag "inline.svg"%></a>
+              </div>
+              <!--/.navbar-header-->
+              <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="/blog" target="_blank">BLOG</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+      
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav scrollnav visible-xs">
+                  <li><a href="#projects">PROJECTS</a></li>
+                  <li><a href="#services">SERVICES</a></li>
+                  <li><a href="#team">TEAM</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                  <li><a href="/blog" target="_blank">BLOG</a></li>
+                </ul>
+              </div>
+              <!--/#main-nav.navbar-collapse-->
+          </nav>
+          <!--/.navbar-->
+        </div>
+      <!--/.container-->
+  </div>
+  <!--/.header-->
 
 <%= yield %>
 
