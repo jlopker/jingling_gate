@@ -8,8 +8,9 @@
  
 <div id="home" class="page-section">
   <div class="container text-center homecontent">
-    <div><%= image_tag "key.svg" , class: "img-responsive" %></div>
-    <h1>Jingling Gate is a web engineering team focused on<br> user-friendly web development.</h1>
+    <div><%= image_tag "key.svg" , class: "img-responsive hidden-xs" %></div>
+    <h1 class="hidden-xs">Jingling Gate is a web engineering team focused on<br> user-friendly web development.</h1>
+    <h1 class="visible-xs">Jingling Gate is a web engineering team focused on user-friendly web development.</h1>
     <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
   </div>
 </div>
@@ -23,11 +24,11 @@
       <hr>
     </div>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
+          <%= image_tag "macbook_proph.png", class: "col-sm-6 hidden-xs", alt: "Prophecy Sciences" %>
           <div class="col-sm-5">
             <h1>Prophecy Sciences</h1>
             <h2>Python and js</h2>
@@ -40,7 +41,7 @@
           </div>
         </div>
         <div class="item">
-          <%= image_tag "macbook_nouv.png", class: "col-sm-6", alt: "Nouvola" %>
+          <%= image_tag "macbook_nouv.png", class: "col-sm-6 hidden-xs", alt: "Nouvola" %>
           <div class="col-sm-5">
             <h1>Nouvola</h1>
             <h2>Rails and js</h2>
@@ -61,6 +62,29 @@
       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
         <span class="fa fa-angle-right fa-5x next"></span>
       </a>
+    </div>
+
+    <div class="visible-xs">
+      <div class="col-sm-5">
+        <h1>Prophecy Sciences</h1>
+        <h2>Python and js</h2>
+        <p>
+          Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
+        </p>
+        <p>
+          Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
+        </p>
+      </div>
+      <div class="col-sm-5">
+        <h1>Nouvola</h1>
+        <h2>Rails and js</h2>
+        <p>
+          Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting your website all at once.
+        </p>
+        <p>
+          We were responsible for front end implementation so that users would be able to upload the necessary information to setup their tests. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -136,7 +160,7 @@
         <h1>Our Proficiencies?</h1>
         <hr>
       </div>
-      <div class="col-xs-6 col-md-3 proficiency-item design">
+      <div class="col-sm-6 col-md-3 proficiency-item design">
         <h2>Front End</h2>
         <ul class="list-unstyled category">
           <li class="top"><h3>HTML/CSS</h3>
@@ -156,7 +180,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-xs-6 col-md-3 proficiency-item design">
+      <div class="col-sm-6 col-md-3 proficiency-item design">
         <h2>Full Stack</h2>
         <ul class="list-unstyled category">
           <li class="top"><h3>Ruby on Rails</h3>
@@ -179,7 +203,7 @@
            </li> 
         </ul>
       </div>
-      <div class="col-xs-6 col-md-3 proficiency-item design">
+      <div class="col-sm-6 col-md-3 proficiency-item design">
         <h2>Deployment</h2>
         <ul class="list-unstyled category">
           <li class="top"><h3>Heroku</h3></li>
@@ -193,7 +217,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-xs-6 col-md-3 proficiency-item design">
+      <div class="col-sm-6 col-md-3 proficiency-item design">
         <h2>Growth/Maintenance</h2>
         <ul class="list-unstyled category">
           <li class="top"><h3>Developer Training</h3></li>

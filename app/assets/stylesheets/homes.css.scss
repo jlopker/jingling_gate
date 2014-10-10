@@ -100,7 +100,11 @@
 		max-height: 35%;
 		margin: auto;
 		text-align: center;
+		@media (max-width: 768px) {
+			max-height: 70%;
+		}
 	}
+
 	.img-responsive {
 		display: inline;
 	}
@@ -122,6 +126,9 @@
 		text-align: center;
 		letter-spacing: 2px;
 	}
+	.service-item {
+		margin-bottom: 20px;
+	}
 }
 .page-section#team {
 	background-color: #FCF8F0;
@@ -133,6 +140,7 @@
 	}
 	.fa {
 		color: #f8b984;
+		margin-bottom: 30px;
 	}
 	.fa:hover {
 		color: #BF8D67;
