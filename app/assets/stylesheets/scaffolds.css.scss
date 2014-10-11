@@ -10,7 +10,7 @@ body {
 a {
   color: #dfb66d;
 }
-a:hover {
+a:hover, a:active, a:focus {
   color: #BF8D67;
 }
 h2 {

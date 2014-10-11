@@ -5,11 +5,16 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	fullScreenContainer();
+  setTimeout(function() {
+    $(window).scrollTop();
+  }, 10000);
+  
 });
 
 function init() {
 	onePageScroll();
 	scrollAnchor();
+
 }
 
 /* --- Full Screen Container ------------- */
