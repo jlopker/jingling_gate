@@ -79,7 +79,7 @@
 }
 .page-section#home:after {
 	content: "";
-	background-image: asset-url('typing.png');
+	background-image: asset-url('JGHeroImage.jpg');
 	background-size: cover;
 	background-position: center center;
 	// opacity: 0.2;
@@ -119,7 +119,7 @@
 	}
 }
 .page-section#services {
-	background-color: #5C4856;
+	background-image: asset-url('JGServicesImage.jpg');
 	color: #fef5ee;
 	hr {
 		border-top-color: #dfb66d;
@@ -151,7 +151,7 @@
 	}
 }
 .page-section#quote {
-	background-color: #f8b984;
+	background-image: asset-url('JGQuoteImage.jpg');
 }
 .page-section#proficiencies {
 	background-color: #FCF8F0;
@@ -179,10 +179,9 @@
 }
 .page-section#contact:after {
 	content: "";
-	background-image: asset-url('workingtogether.jpg');
+	background-image: asset-url('JGContactImage.jpg');
 	background-size: cover;
 	background-position: center center;
-	opacity: 0.4;
 	top: 0;
 	left: 0;
 	bottom: 0;
