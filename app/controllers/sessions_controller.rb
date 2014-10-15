@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if user
       session[:user_id] = user.id
-      redirect_to user_url(session[:user_id]), notice: "Logged in!"
+      redirect_to blog_user_url(session[:user_id]), notice: "Logged in!"
     else
       flash.now.alert = "Invalid email or password."
       render "new"

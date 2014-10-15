@@ -6,6 +6,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 300 !important;
+  margin-top: 70px;
 }
 a {
   color: #dfb66d;
@@ -63,5 +64,59 @@ div {
   ul li {
     font-size: 12px;
     list-style: square;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  height: 70px;
+  opacity: 0.9;
+  margin-top: -70px;
+}
+.header .navbar-brand {
+  font-weight: 900;
+  padding: 0px;
+}
+.header .navbar {
+  margin: 0;
+  border: none;
+}
+.navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding: 25px 0px 10px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #5C4755;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-nav > li > a:hover {
+  background-color: #fff;
+  border-bottom: 2px solid #dfb66d;
+}
+.navbar-nav > li.current > a {
+  border-bottom: 2px solid #dfb66d;
+}
+.navbar-toggle {
+  margin-top: 16px;
+}
+.navbar-toggle .icon-bar {
+  background: #dfb66d;
+}
+.navbar-collapse {
+  background-color: #fff;
+}
+.topSpace {
+  padding-top: 100px;
+}
+.page-header {
+  border: none;
+  hr {
+    border-top-color: #dfb66d;
+    text-align: center;
+    width: 200px;
   }
 }

@@ -2,13 +2,15 @@ JinglingBlog::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   root "homes#index"
   get "/blog", to: "posts#index"
-  get "/signup", to: "users#new", as: "sign_up"
-  get "/log_in", to: "sessions#new", as: "log_in"
-  get "/log_out", to: "sessions#destroy", as: "log_out"
+  get "/blog/signup", to: "users#new", as: "sign_up"
+  get "/blog/log_in", to: "sessions#new", as: "log_in"
+  get "/blog/log_out", to: "sessions#destroy", as: "log_out"
 
-  resources :posts
-  resources :users, only:[:new, :create, :edit, :show]
-  resources :sessions, only:[:new, :create, :destroy]
+  resource :blog do
+    resources :posts
+    resources :users, only:[:new, :create, :edit, :show]
+    resources :sessions, only:[:new, :create, :destroy]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

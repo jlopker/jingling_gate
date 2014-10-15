@@ -1,17 +1,25 @@
-$(window).load(function() {
+var ready;
+ready = function() {
   $('.preloader').fadeOut(1000);
-	init();
-})
-
-$(document).ready(function() {
-	fullScreenContainer();
+  init();
+  fullScreenContainer();
   $(this).scrollTop(0);
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
 
 function init() {
-	onePageScroll();
-	scrollAnchor();
-
+  if ($(location).attr('pathname').substring(0,5) === '/blog') {
+    $('#blognav').addClass('current');
+    //$('.scrollnav').hide();
+    blogNav();
+  }
+  else {
+    onePageScroll();
+    scrollAnchor();
+  }
 }
 
 /* --- Full Screen Container ------------- */
@@ -96,6 +104,16 @@ $(window).scroll(function() {
   var windowpos = $(window).scrollTop() ;
 
   if (windowpos <= 500) {
-      $('.nav li.current').removeClass('current');
+      $('.scrollnav li.current').removeClass('current');
   }
 });
+
+/* --- Blog ------------------- */
+function blogNav() {
+  $('.scrollnav li a').click(function() {
+    window.open('/'+this.hash, '_blank');
+   })
+  $('#blognav').click(function() {
+    
+  }) 
+}

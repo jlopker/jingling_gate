@@ -1,22 +1,20 @@
-  <%= render "header" %>
-
-  <% @posts.each do |post| %>
-  <div class="blog_container row topSpace">
-    <div class="blog_date col-md-2 col-md-offset-1">
-      <%= post.created_at.to_date.to_formatted_s(:long) %>
+<% @posts.each do |post| %>
+<div class="blog_container container topSpace">
+  <div class="blog_content">
+    <h5 class="text-center"><i><%= post.created_at.to_date.to_formatted_s(:long) %></i></h5>
+    <div class="page-header text-center">
+      <h1><a href="/blog/posts/<%= post.id %>"><%= post.title %></a></h1>
+      <hr>
     </div>
-    <div class="blog_content col-md-8">
-      <h1 class="blog_title">
-        <a href="/posts/<%= post.id %>"><%= post.title %></a>
-      </h1>
-      <p class="blog_body">
-        <%= truncate_html(post.body, length: 400) %>
-      </p>
-    </div>
+    <p class="blog_body">
+      <%= truncate_html(post.body, length: 400) %>
+    </p>
+    <h2><a href="/blog/posts/<%= post.id %>">Read more...</a></h2>
   </div>
-        <!--<td><#%= link_to 'Show', post %></td>
-        <td><#%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><#%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-        <% end %>
+</div>
+      <!--<td><#%= link_to 'Show', post %></td>
+      <td><#%= link_to 'Edit', edit_post_path(post) %></td>
+      <td><#%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      <% end %>
 
-      <!--<#%= link_to 'New Post', new_post_path %>-->
+    <!--<#%= link_to 'New Post', new_post_path %>-->
