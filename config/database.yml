@@ -8,7 +8,7 @@ development:
   encoding: unicode
   database: jingling_blog_development
   pool: 5
-  username: cbestiva
+  username: jlop
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -19,7 +19,7 @@ test:
   encoding: unicode
   database: jingling_blog_test
   pool: 5
-  username: cbestiva
+  username: jlop
   password:
 
 production:
@@ -27,5 +27,5 @@ production:
   encoding: unicode
   database: jingling_blog_production
   pool: 5
-  username: cbestiva
+  username: jlop
   password:
