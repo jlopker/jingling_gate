@@ -14,6 +14,25 @@ JinglingBlog::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  # Don't care if the mailer can't send.
+  # config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    #address: 'localhost',
+    #port: 1025
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "jinglinggate.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"],
+    openssl_verify_mode: "none",
+    enable_starttls_auto: true
+  }
+
+   config.action_mailer.default_url_options = { host: "secure-gorge-6707.herokuapp.com" }
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
