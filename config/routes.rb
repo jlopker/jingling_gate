@@ -6,7 +6,6 @@ JinglingBlog::Application.routes.draw do
   get "/blog/log_in", to: "sessions#new", as: "log_in"
   get "/blog/log_out", to: "sessions#destroy", as: "log_out"
 
-  resources :homes, only:[:index, :create]
   resource :blog do
     resources :posts
     resources :users, only:[:new, :create, :edit, :show]

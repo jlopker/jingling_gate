@@ -7,8 +7,6 @@ ruby "2.1.2"
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
-gem 'mailcatcher'
-
 gem 'pg'
 gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 gem 'carrierwave'
