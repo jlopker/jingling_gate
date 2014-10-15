@@ -21,7 +21,7 @@ JinglingBlog::Application.configure do
     #port: 1025
     address: "smtp.gmail.com",
     port: 587,
-    domain: "localhost:3000",
+    domain: "jinglinggate.com",
     authentication: "plain",
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"],

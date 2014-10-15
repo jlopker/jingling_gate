@@ -7,6 +7,6 @@ class ModelMailer < ActionMailer::Base
   #   en.model_mailer.new_record_notification.subject
   #
   def new_record_notification
-    mail to: "inquiries@jinglinggate.com", subject: "Email from website"
+    mail to: "juliana@jinglinggate.com", subject: "Email from website"
   end
 end
