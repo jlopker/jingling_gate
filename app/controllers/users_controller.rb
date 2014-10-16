@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to user_url(@user.id), notice: "Welcome #{@user.first_name}!"
+      redirect_to blog_user_url(@user.id), notice: "Welcome #{@user.first_name}!"
     else
       render "new"
     end
