@@ -237,16 +237,16 @@
     <h2 class="text-center">Fill out this form to request a quote or say hello</h2>
     <p class="form-subtext text-center"><i>Or email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></i></p> 
     <div class='contact-form'>
-      <form name="sentMessage" id="contactForm"  novalidate action="/homes" method="post">
+      <form name="sentMessage" id="contactForm"  novalidate action="/homes" method="post" class="new_message" id="new_message">
         <div class='name'>
-          <input class='form-control first' placeholder='First Name' type='text' id="first_name" autofocus required data-validation-required-message="Please enter your first name">
-          <input class='form-control last' placeholder='Last Name' type='text' id="last_name" required data-validation-required-message="Please enter your last name">
+          <input name="message[first_name]" class='form-control first' placeholder='First Name' type='text' id="first_name" autofocus required data-validation-required-message="Please enter your first name">
+          <input name="message[last_name]" class='form-control last' placeholder='Last Name' type='text' id="last_name" required data-validation-required-message="Please enter your last name">
         </div>
         <div class='contact'>
-          <input class='form-control email' placeholder='E-mail Address' type='text' id="email" required data-validation-required-message="Please enter your email">
+          <input name="message[email]" class='form-control email' placeholder='E-mail Address' type='text' id="email" required data-validation-required-message="Please enter your email">
         </div>
         <div class='message'>
-          <textarea class="form-control" placeholder='Your message' id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+          <textarea name="message[body]" class="form-control" placeholder='Your message' id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
         </div>
         <div id="success"> </div> <!-- For success/fail messages -->
         <footer class="submit-button text-center">
