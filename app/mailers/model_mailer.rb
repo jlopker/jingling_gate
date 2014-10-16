@@ -11,6 +11,6 @@ class ModelMailer < ActionMailer::Base
     @email = email
     @first_name = first_name
     @last_name = last_name
-    mail to: "inqueries@jinglinggate.com", subject: "Email from website"
+    mail to: "inquiries@jinglinggate.com", subject: "Email from website"
   end
 end
