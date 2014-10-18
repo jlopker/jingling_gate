@@ -43,7 +43,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   version :thumb do 
     process eager: true
-    process resize_to_fit: [100, 100], gravity: :face
+    process resize_to_fit: [80, 80], gravity: :face
   end
 
   version :profile_face do 
