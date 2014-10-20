@@ -1,14 +1,28 @@
 <div class="blog_content container topSpace">
-  <h5 class="text-center"><i><%= @post.created_at.to_date.to_formatted_s(:long) %></i></h5>
-  <div class="page-header text-center">
-    <h1><%= link_to_unless_current @post.title, [:blog, @post] %></h1>
-    <hr>
-  </div>
-  <p class="blog_body">
-    <%= raw(@post.body) %>
-  </p>
   <div class="row">
-    <div class="col-xs-6 text-right"><%= image_tag @user.avatar_url(:profile_face) %></div>
+    <div class="blog_content">
+      <div class="page-header text-center">
+        <h5 class="text-center"><i><%= @post.created_at.to_date.to_formatted_s(:long) %></i></h5>
+        <h1 class="blog_title"><%= link_to_unless_current @post.title, [:blog, @post] %></h1>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <p class="blog_body">
+            <%= raw(@post.body) %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row author_container">
+    <div class="col-xs-6 text-right">
+      <% if current_user == @user %>
+        <%= link_to (image_tag @user.avatar_url(:thumb)), blog_user_path(@user), class: "avatar_img" %>
+      <% else %>
+        <%= image_tag @user.avatar_url(:thumb), class: "avatar_img" %>
+      <% end %>
+    </div>
     <div class="col-xs-6">
       <p><i>Author</i></p>
       <h3 class="user_info"><%= @user.first_name + " " %><%= @user.last_name %></h3>

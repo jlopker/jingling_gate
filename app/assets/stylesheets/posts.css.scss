@@ -69,15 +69,18 @@ header {
   padding: 0px;
 }
 
+.blog_container.container.topSpace {
+  padding-top: 10px;
+}
+
 .blog_date {
-  font-size: 15px;
-  color: #999;
-  padding: 0px;
+  //color: #999;
+  margin-top: 0px;
 }
 
 .blog_content {
   margin-bottom: 50px;
-  padding-left: 0px;
+  //padding-left: 0px;
 }
 
 .blog_body {
@@ -89,13 +92,23 @@ header {
 //   margin-bottom: 25px; 
 // }
 
-h2.blog_title {
+.nav.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.blog_content.container.topSpace {
+  padding-top: 10px;
+}
+
+h1.blog_title {
   margin-top: 0px;
-  padding: 0px;
+  //padding: 0px;
 }
 
 .user_info {
   font-size: 15px;
+  margin-top: 0px;
 }
 
 .show_blog_body {
@@ -103,6 +116,13 @@ h2.blog_title {
   padding: 0px;
 }
 
+.author_container {
+  margin-top: 30px;
+}
+
+.avatar_img {
+  border: solid 1px #E0B76E;
+}
 
 // USER SHOW PAGE STYLING
 .user_name {

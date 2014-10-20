@@ -15,14 +15,14 @@
     </div>
   </div>
 
-  <% @posts.each do |post| %>
+  <% @posts.order(created_at: :desc).each do |post| %>
     <div class="blog_container row">
       <div class="blog_date col-md-2 col-md-offset-1">
         <%= post.created_at.to_date.to_formatted_s(:long) %>
       </div>
       <div class="blog_content col-md-8">
         <h1 class="blog_title">
-          <a href="/posts/<%= post.id %>"><%= post.title %></a>
+          <a href="/blog/posts/<%= post.id %>"><%= post.title %></a>
         </h1>
         <p class="blog_body">
           <%= post.body %><br />
