@@ -98,7 +98,29 @@
 	}
 }
 .page-section#quote {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	.page-header {
+		color: #fef5ee;
+	}
+	.form-subtext {
+		color: #dfb66d;
+	}
+}
+.page-section#quote:after {
+	content: "";
 	background-image: asset-url('JGQuoteImage.jpg');
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
 }
 .page-section#proficiencies {
 	background-color: #FCF8F0;
