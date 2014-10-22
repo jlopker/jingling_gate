@@ -14,6 +14,11 @@ a {
 a:hover, a:active, a:focus {
   color: #BF8D67;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
 h2 {
   color: #dfb66d;
   text-transform: uppercase;
@@ -92,6 +97,7 @@ div {
   color: #5C4755;
   font-weight: bold;
   letter-spacing: 2px;
+  font-size: 13px;
 }
 .navbar-nav > li > a:hover {
   background-color: #fff;
