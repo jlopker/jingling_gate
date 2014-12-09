@@ -80,7 +80,8 @@ header {
 
 .blog_content {
   margin-bottom: 50px;
-  //padding-left: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .blog_body {
@@ -103,7 +104,14 @@ header {
 
 h1.blog_title {
   margin-top: 0px;
-  //padding: 0px;
+  font-size: 34px;
+  & a {
+    color: #5c4775;
+    text-decoration: none;
+  }
+  & a:hover {
+    color: #dfb66d;
+  }
 }
 
 .user_info {
@@ -120,8 +128,8 @@ h1.blog_title {
   margin-top: 30px;
 }
 
-.avatar_img {
-  border: solid 1px #E0B76E;
+.avatar_img img {
+  border: 1px solid #E0B76E;
 }
 
 // USER SHOW PAGE STYLING
