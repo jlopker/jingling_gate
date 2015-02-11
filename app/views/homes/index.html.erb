@@ -120,40 +120,18 @@
       <hr>
     </div>
     <div class="row text-center">
-      <div class="col-md-4 col-md-offset-2">
-        <%= image_tag "charlene-avatar.png", class: "display-pic", alt: "Charlene Estiva" %>
-        <h3>Charlene Estiva</h3>
-        <h5><i>Web Developer</i></h5>
-        <h5><a href="mailto:charlene@jinglinggate.com" target="_blank">charlene@jinglinggate.com</a></h5>
-        <p>Born and raised San Franciscan and General Assembly WDI alumna. Front-end developer interested in client-side technologies and UI. Self proclaimed golfer and bay area sports fan.</p>
-        <!-- <a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a> -->
-        <!-- <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a> -->
-        <a class="icon" href="https://www.linkedin.com/in/charleneestiva" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "jason-avatar.png", class: "display-pic", alt: "Jason Bryant" %>
-        <h3>Jason Bryant</h3>
-        <h5><i>iOS Developer</i></h5>
-        <h5><a href="mailto:jasonbryant@stanfordalumni.org " target="_blank">jasonbryant@stanfordalumni.org</a></h5>
-        <p>Stanford University EE graduate turned iOS and Web designer/developer. Ex-touring guitarist for Damian Marley, volunteer, and meditation enthusiast.</p>
-        <a class="icon" href="https://www.linkedin.com/pub/jason-bryant/4b/a93/863" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <div class="col-md-4 col-md-offset-2">
-        <%= image_tag "emma-avatar.jpg", class: "display-pic", alt: "Emma Lindsay" %>
-        <h3>Emma Lindsay</h3>
-        <h5><i>Web Developer</i></h5>
-        <h5><a href="mailto:emma@jinglinggate.com" target="_blank">emma@jinglinggate.com</a></h5>
-        <p>2007 MIT CS alumna who has been coding for over a decade. Took a year off to study massage therapy and is addicted to lattes.</p>
-        <a class="icon" href="https://www.linkedin.com/in/ejlindsay" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "juliana-avatar.jpg", class: "display-pic", alt: "Juliana Lopker" %>
-        <h3>Juliana Lopker</h3>
-        <h5><i>Web Developer</i></h5>
-        <h5><a href="mailto:juliana@jinglinggate.com" target="_blank">juliana@jinglinggate.com</a></h5>
-        <p>San Francisco n00b and Brown University alumna. Full stack developer specializing in the front-end and user experience. Lover of good design, dogs, and ice cream.</p>
-        <a class="icon" href="https://www.linkedin.com/pub/juliana-lopker/36/871/942" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
+      <% people_array.shuffle.each_with_index do |person, index| %>
+        <div class="col-md-4 <%= index%2 == 0 ? 'col-md-offset-2' : '' %>">
+          <%= image_tag person[:picture], class: "display-pic", alt: "Charlene Estiva" %>
+          <h3><%= person[:name] %></h3>
+          <h5><i><%= person[:title] %></i></h5>
+          <h5><a href=<%= "mailto:#{person[:email]}"%> target="_blank"><%= person[:email] %></a></h5>
+          <p><%= person[:bio] %></p>
+          <!-- <a class="icon" href="http://www.twitter.com/dparrelli" target="_blank"><i class="fa fa-twitter"></i></a> -->
+          <!-- <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a> -->
+          <a class="icon" href= <%= person[:linkedin] %> target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
