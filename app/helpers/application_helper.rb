@@ -10,7 +10,7 @@ module ApplicationHelper
         {name: "Jason Bryant",
          title: "iOS Developer",
          picture: "jason-avatar.png",
-         email: "jasonbryant@stanfordalumni.org",
+         email: "jason@jinglinggate.com",
          bio: "Stanford University EE graduate turned iOS and Web designer/developer. Ex-touring guitarist for Damian Marley, volunteer, and meditation enthusiast.",
          linkedin: "https://www.linkedin.com/pub/jason-bryant/4b/a93/863"},
         {name: "Emma Lindsay",
