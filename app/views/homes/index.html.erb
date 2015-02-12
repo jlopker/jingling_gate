@@ -122,7 +122,7 @@
     <div class="row text-center">
       <% people_array.shuffle.each_with_index do |person, index| %>
         <div class="col-md-4 <%= index%2 == 0 ? 'col-md-offset-2' : '' %>">
-          <%= image_tag person[:picture], class: "display-pic", alt: "Charlene Estiva" %>
+          <%= image_tag person[:picture], class: "display-pic", alt: person[:name] %>
           <h3><%= person[:name] %></h3>
           <h5><i><%= person[:title] %></i></h5>
           <h5><a href=<%= "mailto:#{person[:email]}"%> target="_blank"><%= person[:email] %></a></h5>
