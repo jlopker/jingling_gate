@@ -17,7 +17,7 @@ module ApplicationHelper
          title: "Web Developer",
          picture: "emma-avatar.jpg",
          email: "emma@jinglinggate.com",
-         bio: "2007 MIT CS alumna who has been coding for over a decade. Took a year off to study massage therapy and is addicted to lattes.",
+         bio: "2007 MIT Computer Science alumna who has been coding for over a decade. Took a year off to study massage therapy and is addicted to lattes.",
          linkedin: "https://www.linkedin.com/in/ejlindsay"},
         {name: "Juliana Lopker",
          title: "Web Developer",
