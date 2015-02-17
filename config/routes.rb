@@ -9,7 +9,7 @@ JinglingBlog::Application.routes.draw do
   resources :homes, only:[:index, :create]
   resource :blog do
     resources :posts
-    resources :users, only:[:new, :create, :edit, :show]
+    resources :users, only:[:new, :create, :edit, :update, :show, :index]
     resources :sessions, only:[:new, :create, :destroy]
   end
 

@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
@@ -13,12 +18,22 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-    if current_user.posts == nil
-      puts "You have no blogs posted."
+  def edit
+    @user = User.find(params[:id])
+  end
+  
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      redirect_to blog_user_path(@user)
     else
-      @posts = current_user.posts.all
+      render "edit"
     end
+  end
+
+
+  def show
+    @user = User.find(params[:id])
   end
 
   private

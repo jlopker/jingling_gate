@@ -1,0 +1,19 @@
+<div class="container topSpace">
+  <% @users.each do |user| %>
+    <div class="row">
+      <div class="user_name col-md-2 col-md-offset-1">
+        <%= image_tag user.avatar_url(:profile_face) %><br/>
+        <%= user.first_name + " " %><%= user.last_name %>
+      </div>
+      <div class="user_nav col-md-4-offset-3">
+        <% if current_user.try(:id) == user.id %>
+          LOGGED IN!
+          <div class="new_post col-md-2">
+            <%= link_to '+ Create new post', new_blog_post_path %>
+          </div>
+          <%= link_to 'Log out', log_out_path %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
