@@ -65,7 +65,8 @@
 	}
 	.taglineText {
         font-size: 22px;
-        margin: 15px 30px;
+        margin: 15px auto;
+        max-width: 777px;
         @media (max-width: 768px) {
             font-size: 18px;
         }
