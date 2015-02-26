@@ -57,12 +57,19 @@
 	}
 	.heroText {
 		font-size: 45px;
-		line-height: 60px
+		line-height: 60px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 30px;
+        }
 	}
 	.taglineText {
-    font-size: 22px;
-    margin: 15px 30px;
-  }
+        font-size: 22px;
+        margin: 15px 30px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
 }
 
 .page-section#projects {

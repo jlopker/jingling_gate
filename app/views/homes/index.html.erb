@@ -8,11 +8,10 @@
  
 <div id="home" class="page-section">
   <div class="container text-center homecontent">
-    <div><%= image_tag "key.svg" , class: "img-responsive hidden-xs" %></div>
-    <h1 class="hidden-xs heroText">Full Stack Development for User Growth</h1>
-    <div class="hidden-xs taglineText">Jingling Gate Productions provides full stack development for companies looking to increase the number or users or sales they are making. We specialize in usability for user sign up flow and user conversion, analysis of marketing pages, and streamlining of checkout and purchasing flows.</div>
-    <h1 class="visible-xs">Full Stack Development for User Growth</h1>
-    <div class="visible-xs">Jingling Gate Productions provides full stack development for companies looking to increase the number or users or sales they are making. We specialize in usability for user sign up flow and user conversion, analysis of marketing pages, and streamlining of checkout and purchasing flows.</div>
+    <div><%= image_tag "key.svg" , class: "img-responsive" %></div>
+    <h1 class="heroText">Full Stack Development for Growth</h1>
+    <div class="taglineText">Focusing on growth and user retention, we deliver highly useble and extensible sites with a friendly attitude.</div>
+    <!-- We work with companies looking to increase the number of users or sales they are making. We specialize in usability for user sign up flow and user conversion, analysis of marketing pages, and streamlining of checkout and purchasing flows.</div> -->
     <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
   </div>
 </div>
@@ -30,12 +29,12 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <%= image_tag "macbook_nouv.png", class: "col-sm-6 hidden-xs", alt: "Nouvola" %>
+          <%= image_tag "macbook_nouv.png", class: "col-sm-6", alt: "Nouvola" %>
           <div class="col-sm-5">
             <h1>Nouvola</h1>
             <h2>Rails Full Stack</h2>
             <p>
-              Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting your website all at once.
+              Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting a website.
             </p>
             <p>
               We were responsible for implementing a front end redesign after a complete UI overhaul. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
@@ -46,7 +45,7 @@
           </div>
         </div>
         <div class="item">
-          <%= image_tag "macbook_proph.png", class: "col-sm-6 hidden-xs", alt: "Prophecy Sciences" %>
+          <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
           <div class="col-sm-5">
             <h1>Prophecy Sciences</h1>
             <h2>Python and js</h2>
@@ -62,7 +61,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="col-sm-6 hidden-xs text-center knackk-logo-holder">
+          <div class="col-sm-6 text-center knackk-logo-holder">
             <%= image_tag "knackk-logo.png", class: "logo-only", alt: "Tatcha" %>
           </div>
           <div class="col-sm-5">
@@ -77,7 +76,7 @@
           </div>
         </div>
         <div class="item">
-          <%= image_tag "macbook_tatcha.png", class: "col-sm-6 hidden-xs", alt: "Prophecy Sciences" %>
+          <%= image_tag "macbook_tatcha.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
           <div class="col-sm-5">
             <h1>Tatcha</h1>
             <h2>Front end HTML/CSS/Javascript</h2>
@@ -89,6 +88,22 @@
             </p>
             <p>
               <a href="http://www.tatcha.com/" target="_blank">tatcha.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "macbook_scrumpt.png", class: "col-sm-6", alt: "Scrumpt" %>
+          <div class="col-sm-5">
+            <h1>Scrumpt</h1>
+            <h2>Full stack Javascript</h2>
+            <p>
+              Scrumpt provides busy parents with all of the portioned ingredients and instructions needed to make healthy, easy-to-assemble lunches and snacks for their little ones.
+            </p>
+            <p>
+              We were the core team working on this site providing both front and back end development for the Scrumpt e-commerce site.
+            </p>
+            <p>
+              <a href="http://www.scrumptbox.com/" target="_blank">scrumptbox.com</a>
             </p>
           </div>
         </div>
@@ -124,7 +139,7 @@
         <h1>Nouvola</h1>
         <h2>Rails Full Stack</h2>
         <p>
-          Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting your website all at once.
+          Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting a website.
         </p>
         <p>
           We were responsible for implementing a front end redesign after a complete UI overhaul. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
@@ -170,6 +185,19 @@
         </p>
       </div>
       <div class="col-sm-5">
+        <h1>Scrumpt</h1>
+        <h2>Full stack Javascript</h2>
+        <p>
+          Scrumpt provides busy parents with all of the portioned ingredients and instructions needed to make healthy, easy-to-assemble lunches and snacks for their little ones.
+        </p>
+        <p>
+          We were the core team working on this site providing both front and back end development for the Scrumpt e-commerce site.
+        </p>
+        <p>
+          <a href="http://www.scrumptbox.com/" target="_blank">scrumptbox.com</a>
+        </p>
+      </div>
+      <div class="col-sm-5">
         <h1>Daylighted</h1>
         <h2>Front end HTML/CSS</h2>
         <p>
@@ -195,17 +223,17 @@
       <div class="col-sm-4 service-item">
         <h2>Websites from Scratch</h2>
         <hr>
-        <p>We can help you bring an idea to market, <br /> developing to foster user growth and conversion.</p>
+        <p>We bring ideas to market, <br /> developing to foster user growth and conversion.</p>
       </div>
       <div class="col-sm-4 service-item">
         <h2>Streamlining Existing Sites</h2>
         <hr>
-        <p>We can help improve the signup, marketing, <br /> or sales flows of your existing sites.</p>
+        <p>We improve signup, marketing, <br /> and sales flows of existing sites.</p>
       </div>
       <div class="col-sm-4 service-item">
         <h2>More Development Power</h2>
         <hr>
-        <p>Sometimes, you just need more. We augment <br /> your existing team to get features out faster.</p>
+        <p>We augment existing teams <br /> to get features out faster.</p>
       </div>
     </div>
 </div>
@@ -322,7 +350,7 @@
     <div class="page-header text-center">
       <h1>Let's work together!</h1>
     </div>
-    <h2 class="text-center">Fill out this form to request a quote or say hello</h2>
+    <h2 class="text-center">Drop us a line, and tell us about your idea or website.</h2>
     <p class="form-subtext text-center"><i>Or email <a href="mailto:inquiries@jinglinggate.com?Subject=Message_Me" target="_blank">inquiries@jinglinggate.com</a></i></p> 
     <div class='contact-form'>
       <form name="sentMessage" id="contactForm"  novalidate action="/homes" method="post" class="new_message" id="new_message">
