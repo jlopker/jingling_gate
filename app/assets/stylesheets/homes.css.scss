@@ -15,6 +15,19 @@
   background: #BF8D67;
   color: #5C4755;
 }
+.alert#consult {
+    background-color: #5C4856;
+    margin-bottom: 0px;
+    border-radius: 0;
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
 .page-section {
 	padding: 70px 0;
 }
@@ -66,7 +79,8 @@
 	.taglineText {
         font-size: 22px;
         margin: 15px auto;
-        max-width: 777px;
+        max-width: 700px;
+        line-height: 1.5;
         @media (max-width: 768px) {
             font-size: 18px;
         }
